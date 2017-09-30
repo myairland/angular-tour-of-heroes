@@ -26,6 +26,7 @@ export class AppComponent {
   title = 'liming app';
   heroes = HEROES;
   selectedHero:Hero;
+  
   onSelect(hero:Hero):void{
     this.selectedHero = hero;
   }

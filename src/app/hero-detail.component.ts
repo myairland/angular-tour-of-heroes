@@ -15,7 +15,7 @@ import { Hero } from "./hero";
   `
 })
 
-export class HeroDetailComponet{
+export class HeroDetailComponent{
     @Input() hero:Hero;
 }
 
