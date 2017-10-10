@@ -1,4 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
+  <h2>My Heroes</h2>
   <ul class="heroes">
     
     <li *ngFor = "let hero of heroes"
@@ -6,6 +7,11 @@
       (click)="onSelect(hero)">
       <span class="badge">{{hero.id}}</span>{{hero.name}}
     </li>
+    <div>
+      <h2>
+        {{selectedHero.name | uppercase}} is my hero
+      </h2>
+      <button (click)="gotoDetail()">View Detail</button>
+    </div>
 
   </ul>
-  <hero-detail [hero]="selectedHero"></hero-detail>
